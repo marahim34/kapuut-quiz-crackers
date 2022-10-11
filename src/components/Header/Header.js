@@ -17,7 +17,7 @@ const Header = () => {
             <div className='mr-10'>
                 <nav>
                     <Link className='mr-4 hover:bg-purple-800 hover:font-semibold font hover:text-white' to="/">Home</Link>
-                    <Link className='mr-4 hover:bg-purple-800 hover:font-semibold font hover:text-white' to="topic">Topics</Link>
+                    <Link className='mr-4 hover:bg-purple-800 hover:font-semibold font hover:text-white' to="topics">Topics</Link>
                     <Link className='mr-4 hover:bg-purple-800 hover:font-semibold font hover:text-white' to="statistics">Statistics</Link>
                     <Link className='mr-4 hover:bg-purple-800 hover:font-semibold font hover:text-white' to="blog">Blog</Link>
                     <Link className='mr-4 hover:bg-purple-800 hover:font-semibold font hover:text-white' to="about">About</Link>
