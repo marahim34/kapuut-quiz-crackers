@@ -9,19 +9,15 @@ export const QuizContext = createContext([]);
 
 const QuizDetails = ({ questionAll }) => {
     const { question, options, correctAnswer } = questionAll;
-    // console.log(questionAll);
     const answer = correctAnswer;
     const notify = () => toast(answer);
 
-    // console.log(answer);
-
     const handler = options => {
-        // console.log(options);
         if (options === answer) {
-            return toast('Answer is correct')
+            return toast('Your answer is correct!!! Yay Yay!!!')
         }
         else {
-            return toast('You are wrong. Click the eye button for correct answer')
+            return toast(`Your answer is incorrect. Correct answer is ${answer}`);
         }
     }
 

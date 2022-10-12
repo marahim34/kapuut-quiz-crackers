@@ -5,7 +5,7 @@ import { QuizContext } from '../Quiz/Quiz';
 
 const Options = ({ option, handler }) => {
     const correctAnswer = useContext(QuizContext);
-    console.log(correctAnswer);
+    // console.log(correctAnswer);
 
 
     return (
