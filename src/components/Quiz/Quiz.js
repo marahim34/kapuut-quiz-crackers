@@ -5,6 +5,10 @@ import Options from '../Options/Options';
 
 const QuizDetails = ({ questionAll }) => {
     const { question, options, correctAnswer } = questionAll;
+    console.log(questionAll);
+
+    // con
+
     const addHandler = () => {
         const answer = correctAnswer;
         console.log(answer);
@@ -17,6 +21,7 @@ const QuizDetails = ({ questionAll }) => {
                 <h3 className='pt-3 font-semibold pr-10'>Question: {question.slice(3, -4)}</h3>
                 <button><FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
                 </button>
+                <p className='pl-12'>{correctAnswer}</p>
             </div>
             <div>
                 {
