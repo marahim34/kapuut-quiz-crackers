@@ -6,6 +6,7 @@ import introVideo from '../../assets/Generic_SchoolsNBiz.mp4';
 const Home = () => {
     const quizAll = useLoaderData();
     const topicsAllCategory = quizAll.data;
+
     return (
         <div>
             <div className='flex flex-col md:flex-row justify-center items-center md:items-start gap-8'>

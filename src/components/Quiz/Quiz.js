@@ -7,29 +7,22 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const QuizDetails = ({ questionAll }) => {
-    const { question, options, correctAnswer } = questionAll;
-    console.log(questionAll);
+    const { question, options, correctAnswer, handler } = questionAll;
+    // console.log(questionAll);
     const answer = correctAnswer;
     const notify = () => toast(answer);
 
-    // con
 
-    // const addHandler = () => {
-    //     const answer = correctAnswer;
-    //     console.log(answer);
-    //     return correctAnswer;
-    // }
 
     return (
         <div>
             <div className='flex items-center'>
                 <h3 className='pt-3 font-semibold pr-10'>Question: {question.slice(3, -4)}</h3>
                 <button onClick={notify}><FontAwesomeIcon icon={faEye}> </FontAwesomeIcon></button><ToastContainer />
-                {/* <p className='pl-12'>{correctAnswer}</p> */}
             </div>
             <div>
                 {
-                    options.map(option => <Options key={option} option={option}></Options>)
+                    options.map(option => <Options key={option} option={option} ></Options>)
                 }
             </div>
 

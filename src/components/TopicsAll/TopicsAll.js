@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { createContext } from 'react';
 import { Link } from 'react-router-dom';
 
-export const TopicsContext = createContext('Topics');
+export const TopicsContext = createContext([]);
 
 const TopicsAll = ({ topicsAll }) => {
     const { id, name, logo, total } = topicsAll;

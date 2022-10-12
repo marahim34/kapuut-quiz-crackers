@@ -4,8 +4,9 @@ import Quiz from '../Quiz/Quiz';
 
 const QuizAll = () => {
     const quizAll = useLoaderData().data;
-    // console.log(quizAll);
     const questions = quizAll.questions;
+
+
     return (
         <div className='m-8'>
             <h3 className='font-bold text-2xl text-center'>Quiz on {quizAll.name}</h3>
