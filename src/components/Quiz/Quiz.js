@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const QuizDetails = ({ questionAll }) => {
-    const { question, options, correctAnswer, handler } = questionAll;
+    const { question, options, correctAnswer } = questionAll;
     // console.log(questionAll);
     const answer = correctAnswer;
     const notify = () => toast(answer);
