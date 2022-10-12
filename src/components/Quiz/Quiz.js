@@ -1,12 +1,23 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import Options from '../Options/Options';
 
 const QuizDetails = ({ questionAll }) => {
-    // const { questions } = question;
-    const { question, options } = questionAll;
+    const { question, options, correctAnswer } = questionAll;
+    const addHandler = () => {
+        const answer = correctAnswer;
+        console.log(answer);
+        return correctAnswer;
+    }
+
     return (
         <div>
-            <h3 className='pt-3 font-semibold'>Question: {question.slice(3, -4)}</h3>
+            <div className='flex items-center'>
+                <h3 className='pt-3 font-semibold pr-10'>Question: {question.slice(3, -4)}</h3>
+                <button><FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
+                </button>
+            </div>
             <div>
                 {
                     options.map(option => <Options key={option} option={option}></Options>)
